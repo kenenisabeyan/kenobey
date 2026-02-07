@@ -34,10 +34,10 @@ const projects = [
     link: "#",
     github: "#",
     tech: [
-  { icon: <SiNextdotjs className="text-white" />, name: "Next.js" },
-  { icon: <FaReact className="text-cyan-400" />, name: "React" },
-  { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS/SCSS" },
-],
+      { icon: <SiNextdotjs className="text-white" />, name: "Next.js" },
+      { icon: <FaReact className="text-cyan-400" />, name: "React" },
+      { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS/SCSS" },
+    ],
     category: "Fronted",
   },
   {
@@ -96,13 +96,12 @@ const projects = [
       { icon: <FaReact className="text-cyan-400" />, name: "React" },
       { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
       { icon: <SiJavascript className="text-yellow-400" />, name: "JavaScript" },
-      { icon: <SiMongodb className="text-green-600" />, name: "MongoDB" },
+      { icon: <SiMongodb className="text-stone-600" />, name: "MongoDB" },
       { icon: <FaLock className="text-purple-500" />, name: "NextAuth.js" },
       { icon: <FaLayerGroup className="text-indigo-400" />, name: "Radix UI" },
-      { icon: <FaChartBar className="text-emerald-400" />, name: "Charts & Analytics" },
+      { icon: <FaChartBar className="text-orange-400" />, name: "Charts & Analytics" },
 
 
-      
     ],
     category: "Full-stack",
   },
@@ -149,27 +148,15 @@ const ProjectsSection = () => {
     },
   };
 
-  const item = {
-    hidden: { y: 50, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    },
-  };
-
   const categories = [...new Set(projects.map((project) => project.category))];
 
   return (
     <section
-      className="relative py-28 overflow-hidden bg-gradient-to-b from-gray-900 to-black"
+      className="relative py-28 overflow-hidden bg-[var(--background)]"
       id="projects"
     >
-      <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#06890a] rounded-full filter blur-3xl opacity-10 -z-10"></div>
-      <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-[#4dc247] rounded-full filter blur-3xl opacity-5 -z-10"></div>
+      <div className="absolute -top-40 -right-40 w-80 h-80 bg-[var(--primary)] rounded-full filter blur-3xl opacity-5 -z-10 pointer-events-none"></div>
+      <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-[var(--primary)] rounded-full filter blur-3xl opacity-5 -z-10 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
@@ -178,10 +165,12 @@ const ProjectsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300">
-            My <span className="text-[#06890a]">Projects</span> Showcase
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="text-[var(--text-primary)]">My </span>
+            <span className="text-[var(--primary)]">Projects</span>
+            <span className="text-[var(--text-primary)]"> Showcase</span>
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto">
             A curated collection of my best work demonstrating technical
             expertise and creative problem-solving
           </p>
@@ -196,7 +185,7 @@ const ProjectsSection = () => {
           {categories.map((category, index) => (
             <button
               key={index}
-              className="px-4 py-2 text-sm font-medium rounded-full bg-gray-800/50 text-gray-300 border border-gray-700 hover:bg-gray-700/50 hover:text-white transition-colors duration-300"
+              className="px-4 py-2 text-sm font-medium rounded-full bg-[var(--surface-highlight)] text-[var(--text-secondary)] border border-[var(--border)] hover:bg-[var(--primary)] hover:text-white transition-colors duration-300"
             >
               {category}
             </button>

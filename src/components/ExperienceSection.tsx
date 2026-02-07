@@ -9,8 +9,8 @@ const ExperienceSection = () => {
       id: 1,
       company: "",
       role: "Full-Stack Developer",
-      // period: "Feb 2024 - Present",
-      // location: "Remote",
+      period: "Feb 2024 - Present",
+      location: "Remote",
       description:
         "Working on full-stack web development projects, building responsive front-end interfaces and robust back-end systems using modern technologies.",
       technologies: [
@@ -102,11 +102,11 @@ const ExperienceSection = () => {
         <motion.div variants={cardVariants} className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             {/* <span className="text-white">Professional </span> */}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#06890a] to-[#4dc247]">
+            <span className="text-[var(--primary)]">
               Experience
             </span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-[var(--text-secondary)] max-w-2xl mx-auto">
             Building digital solutions that drive results and exceed
             expectations
           </p>
@@ -120,9 +120,9 @@ const ExperienceSection = () => {
               variants={cardVariants}
               whileHover={{
                 scale: 1.02,
-                boxShadow: "0 25px 40px rgba(0,255,0,0.15)",
+                boxShadow: "var(--shadow-lg)",
               }}
-              className="w-full bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-2xl p-8 shadow-2xl transition-all duration-500 group relative"
+              className="w-full bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-8 shadow-md transition-all duration-500 group relative"
             >
               {/* Desktop CTA */}
               <motion.a
@@ -131,7 +131,7 @@ const ExperienceSection = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="hidden lg:inline-flex absolute -top-3 -right-3 items-center gap-2 bg-gradient-to-r from-[#14a800] to-[#0d8d00] text-white font-semibold px-5 py-2.5 rounded-full hover:shadow-2xl hover:shadow-[#14a800]/30 transition-all duration-300 z-20"
+                className="hidden lg:inline-flex absolute -top-3 -right-3 items-center gap-2 bg-[var(--primary)] text-white font-semibold px-5 py-2.5 rounded-full hover:shadow-lg hover:shadow-[var(--primary)]/30 transition-all duration-300 z-20"
               >
                 {/*  <span>Hire Me on Upwork</span> */}
                 <FiExternalLink className="text-sm" />
@@ -140,20 +140,20 @@ const ExperienceSection = () => {
               {/* Header */}
               <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-6">
                 <div>
-                  <h3 className="text-2xl font-bold text-white group-hover:text-[#4dc247] transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-[var(--text-primary)] group-hover:text-[var(--primary)] transition-colors duration-300">
                     {exp.role}
                   </h3>
                   <div className="flex flex-col sm:flex-row sm:items-center gap-2 mt-2">
-                    <span className="text-lg font-semibold text-[#4dc247]">
+                    <span className="text-lg font-semibold text-[var(--primary)]">
                       {exp.company}
                     </span>
-                    <span className="hidden sm:block text-gray-400">•</span>
-                    <span className="text-gray-400">{exp.location}</span>
+                    <span className="hidden sm:block text-[var(--text-secondary)]">•</span>
+                    <span className="text-[var(--text-secondary)]">{exp.location}</span>
                   </div>
                 </div>
 
                 {/* Period badge */}
-                <span className="inline-flex items-center px-4 py-2 bg-[#06890a]/20 text-[#4dc247] rounded-full text-sm font-medium mt-4 lg:mt-0">
+                <span className="inline-flex items-center px-4 py-2 bg-[var(--surface-highlight)] text-[var(--primary)] rounded-full text-sm font-medium mt-4 lg:mt-0">
                   {exp.period}
                 </span>
               </div>
@@ -163,15 +163,15 @@ const ExperienceSection = () => {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1, duration: 0.6 }}
-                className="text-gray-300 text-lg leading-relaxed mb-8"
+                className="text-[var(--text-secondary)] text-lg leading-relaxed mb-8"
               >
                 {exp.description}
               </motion.p>
 
               {/* Technologies */}
               <div className="mb-8">
-                <h4 className="text-white font-semibold mb-4 flex items-center gap-2">
-                  <FaCode className="text-gray-400" />
+                <h4 className="text-[var(--text-primary)] font-semibold mb-4 flex items-center gap-2">
+                  <FaCode className="text-[var(--text-secondary)]" />
                   Technologies & Tools
                 </h4>
                 <div className="flex flex-wrap gap-3">
@@ -182,7 +182,7 @@ const ExperienceSection = () => {
                       variants={badgeVariants}
                       initial="hidden"
                       animate="visible"
-                      className="px-4 py-2 bg-gray-800/50 text-gray-300 rounded-full text-sm font-medium border border-gray-700 hover:border-[#4dc247]/50 hover:text-[#4dc247] transition-all duration-300"
+                      className="px-4 py-2 bg-[var(--surface-highlight)] text-[var(--text-secondary)] rounded-full text-sm font-medium border border-[var(--border)] hover:border-[var(--primary)]/50 hover:text-[var(--primary)] transition-all duration-300"
                     >
                       {tech}
                     </motion.span>
@@ -192,7 +192,7 @@ const ExperienceSection = () => {
 
               {/* Achievements */}
               <div>
-                <h4 className="text-white font-semibold mb-4 flex items-center gap-2">
+                <h4 className="text-[var(--text-primary)] font-semibold mb-4 flex items-center gap-2">
                   <FaAward className="text-yellow-400" />
                   Key Achievements
                 </h4>
@@ -204,12 +204,12 @@ const ExperienceSection = () => {
                       variants={achievementVariants}
                       initial="hidden"
                       animate="visible"
-                      className="flex items-start gap-3 p-4 bg-gray-800/30 rounded-lg hover:bg-gray-800/50 transition-all duration-300"
+                      className="flex items-start gap-3 p-4 bg-[var(--surface-highlight)]/50 rounded-lg hover:bg-[var(--surface-highlight)] transition-all duration-300"
                     >
                       <div className="flex-shrink-0 mt-1 text-lg">
                         {achievement.icon}
                       </div>
-                      <p className="text-gray-300 leading-relaxed">
+                      <p className="text-[var(--text-secondary)] leading-relaxed">
                         {achievement.text}
                       </p>
                     </motion.div>
@@ -224,7 +224,7 @@ const ExperienceSection = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="lg:hidden mt-6 w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#14a800] to-[#0d8d00] text-white font-semibold px-6 py-4 rounded-xl hover:shadow-2xl hover:shadow-[#14a800]/30 transition-all duration-300"
+                className="lg:hidden mt-6 w-full inline-flex items-center justify-center gap-2 bg-[var(--primary)] text-white font-semibold px-6 py-4 rounded-xl hover:shadow-lg hover:shadow-[var(--primary)]/30 transition-all duration-300"
               >
                 {/* <span>Hire Me on Upwork</span> */}
                 <FiExternalLink className="text-sm" />

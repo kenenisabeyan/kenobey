@@ -1,35 +1,99 @@
 @import "tailwindcss";
 
+
+
 :root {
-  --linearPrimarySecondary: linear-gradient(#06890a, #5db8f8);
-  --linearPrimaryAccent: linear-gradient(#06890a, #0a33d6);
-  --linearSecondaryAccent: linear-gradient(#5db8f8, #0a33d6);
-  --radialPrimarySecondary: radial-gradient(#06890a, #5db8f8);
-  --radialPrimaryAccent: radial-gradient(#06890a, #0a33d6);
-  --radialSecondaryAccent: radial-gradient(#5db8f8, #0a33d6);
+  /* Professional Blue Theme */
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+
+  /* Shared Gradients */
+  --gradient-primary: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  --gradient-glow: radial-gradient(circle at center, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
 }
 
 :root[data-theme="light"] {
-  --text: #011e02;
-  --background: #f1fef2;
-  --primary: #06890a;
-  --secondary: #5db8f8;
-  --accent: #0a33d6;
+  --background: #ffffff;
+  /* Pure White */
+  --surface: #f8fafc;
+  /* Slate 50 */
+  --surface-rgb: 248, 250, 252;
+  --surface-highlight: #f1f5f9;
+  /* Slate 100 */
+
+  --text-primary: #0f172a;
+  /* Slate 900 - Deep Blue-Black */
+  --text-secondary: #475569;
+  /* Slate 600 */
+  --text-accent: #2563eb;
+  /* Blue 600 */
+  --border: #e2e8f0;
+  /* Slate 200 */
+
+  --primary: #2563eb;
+  /* Royal Blue */
+  --primary-hover: #1d4ed8;
+  /* Darker Blue */
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
+
 :root[data-theme="dark"] {
-  --text: #e1fee2;
-  --background: #010e02;
-  --primary: #76f97a;
-  --secondary: #0761a2;
-  --accent: #2952f5;
+  --background: #020617;
+  /* Slate 950 */
+  --surface: #0f172a;
+  /* Slate 900 */
+  --surface-rgb: 15, 23, 42;
+  --surface-highlight: #1e293b;
+  /* Slate 800 */
+
+  --text-primary: #f8fafc;
+  /* Slate 50 */
+  --text-secondary: #94a3b8;
+  /* Slate 400 */
+  --text-accent: #60a5fa;
+  /* Blue 400 */
+  --border: #1e293b;
+  /* Slate 800 */
+
+  --primary: #3b82f6;
+  /* Blue 500 */
+  --primary-hover: #2563eb;
+  /* Blue 600 */
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.5);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.5);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
 }
 
 @theme {
-  --font-family-sans: "Inter", sans-serif;
-
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
+  --font-family-sans: "Poppins", sans-serif;
 }
-/* jfk4hwre jnkv`*/
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-highlight);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}

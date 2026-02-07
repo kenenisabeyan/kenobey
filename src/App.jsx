@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
+import { ThemeProvider } from "./context/ThemeContext";
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import SkillsSection from "./components/Skills";
@@ -29,39 +30,41 @@ function App() {
         setIsLoading(false);
         setEnableScrollTracking(true);
       });
-    }, 1500);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);
 
-  if (isLoading) {
-    return <LoadingScreen />;
-  }
-
   return (
-    <div className="relative bg-gradient-to-b from-[#010e02] to-black text-white">
-      {enableScrollTracking && (
-        <motion.div
-          className="fixed top-0 left-0 right-0 h-1 bg-[#06890a] z-50 origin-left"
-          initial={{ scaleX: 0 }}
-          style={{ scaleX }}
-        />
+    <ThemeProvider>
+      {isLoading ? (
+        <LoadingScreen />
+      ) : (
+        <div className="relative min-h-screen bg-[var(--background)] text-[var(--text-primary)] transition-colors duration-300">
+          {enableScrollTracking && (
+            <motion.div
+              className="fixed top-0 left-0 right-0 h-1 bg-[var(--primary)] z-50 origin-left"
+              initial={{ scaleX: 0 }}
+              style={{ scaleX }}
+            />
+          )}
+
+          <div className="max-w-[85rem] mx-auto flex flex-col items-center px-4 sm:px-6 lg:px-8">
+            <NavBar />
+            <main className="w-full">
+              <HeroSection />
+              <SkillsSection />
+              <ProjectsSection />
+              <ExperienceSection />
+              <ContactSection />
+            </main>
+            <Footer />
+          </div>
+
+          <ScrollToTop />
+        </div>
       )}
-
-      <div className="max-w-[85rem] mx-auto flex flex-col items-center px-4 sm:px-6 lg:px-8">
-        <NavBar />
-        <main className="w-full">
-          <HeroSection />
-          <SkillsSection />
-          <ProjectsSection />
-          <ExperienceSection />
-          <ContactSection />
-        </main>
-        <Footer />
-      </div>
-
-      <ScrollToTop />
-    </div>
+    </ThemeProvider>
   );
 }
 

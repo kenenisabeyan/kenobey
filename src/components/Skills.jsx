@@ -42,7 +42,7 @@ const skillCategories = [
       { name: "Redux", icon: <SiRedux />, color: "text-purple-500" },
       { name: "Three.js", icon: <TbBrandThreejs />, color: "text-green-300" },
     ],
-    gradient: "from-cyan-500 to-blue-600",
+    gradient: "from-amber-600 to-orange-700",
   },
   {
     name: "Backend",
@@ -51,7 +51,7 @@ const skillCategories = [
       { name: "Express", icon: <SiExpress />, color: "text-gray-300" },
       { name: "GraphQL", icon: <SiGraphql />, color: "text-pink-600" },
     ],
-    gradient: "from-purple-500 to-pink-600",
+    gradient: "from-stone-500 to-warm-600",
   },
   {
     name: "Database",
@@ -60,7 +60,7 @@ const skillCategories = [
       { name: "MongoDB", icon: <SiMongodb />, color: "text-green-600" },
       { name: "Firebase", icon: <SiFirebase />, color: "text-yellow-500" },
     ],
-    gradient: "from-emerald-500 to-teal-600",
+    gradient: "from-orange-500 to-stone-600",
   },
   {
     name: "DevOps & Tools",
@@ -80,7 +80,7 @@ const skillCategories = [
       { name: "Vercel", icon: <SiVercel />, color: "text-white" },
       { name: "Netlify", icon: <SiNetlify />, color: "text-green-400" },
     ],
-    gradient: "from-violet-500 to-fuchsia-600",
+    gradient: "from-rose-400 to-orange-400",
   },
 ];
 
@@ -124,10 +124,10 @@ const SkillsSection = () => {
   };
 
   return (
-    <section className="relative py-20 overflow-hidden" id="skills">
+    <section className="relative py-20 overflow-hidden bg-[var(--background)]" id="skills">
       {/* Background elements */}
-      <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#06890a] rounded-full filter blur-3xl opacity-10 -z-10"></div>
-      <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-[#4dc247] rounded-full filter blur-3xl opacity-5 -z-10"></div>
+      <div className="absolute -top-40 -right-40 w-80 h-80 bg-[var(--primary)] rounded-full filter blur-3xl opacity-5 -z-10 pointer-events-none"></div>
+      <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-[var(--primary)] rounded-full filter blur-3xl opacity-5 -z-10 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
@@ -136,10 +136,12 @@ const SkillsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300">
-            My <span className="text-[#06890a]">Technical</span> Stack
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="text-[var(--text-primary)]">My </span>
+            <span className="text-[var(--primary)]">Technical</span>
+            <span className="text-[var(--text-primary)]"> Stack</span>
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto">
             Comprehensive collection of technologies I work with
           </p>
         </motion.div>
@@ -158,7 +160,7 @@ const SkillsSection = () => {
               className="relative group"
             >
               {/* Category card */}
-              <div className="h-full bg-gradient-to-br from-gray-900/50 to-gray-800/20 border border-gray-700/50 rounded-2xl p-6 transition-all duration-500 group-hover:border-[#06890a]/50 group-hover:bg-gray-800/30 group-hover:shadow-lg group-hover:shadow-[#06890a]/10 overflow-hidden">
+              <div className="h-full bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 transition-all duration-500 group-hover:border-[var(--primary)]/50 group-hover:shadow-lg group-hover:shadow-[var(--primary)]/10 overflow-hidden">
                 {/* Gradient header */}
                 <div
                   className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${category.gradient}`}
@@ -169,7 +171,7 @@ const SkillsSection = () => {
                   <div className={`text-2xl ${category.skills[0].color}`}>
                     {category.skills[0].icon}
                   </div>
-                  <h3 className="text-xl font-bold text-white">
+                  <h3 className="text-xl font-bold text-[var(--text-primary)]">
                     {category.name}
                   </h3>
                 </div>
@@ -181,12 +183,12 @@ const SkillsSection = () => {
                       key={skillIndex}
                       variants={skillVariants}
                       whileHover={{ y: -5, scale: 1.1 }}
-                      className="flex flex-col items-center justify-center p-3 rounded-xl bg-gray-800/30 hover:bg-gray-700/50 transition-all duration-300"
+                      className="flex flex-col items-center justify-center p-3 rounded-xl bg-[var(--surface-highlight)] hover:bg-[var(--surface-highlight)]/80 transition-all duration-300"
                     >
                       <div className={`text-3xl mb-2 ${skill.color}`}>
                         {skill.icon}
                       </div>
-                      <span className="text-xs font-medium text-center text-gray-300">
+                      <span className="text-xs font-medium text-center text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">
                         {skill.name}
                       </span>
                     </motion.div>
@@ -195,7 +197,7 @@ const SkillsSection = () => {
               </div>
 
               {/* Glow effect */}
-              <div className="absolute inset-0 rounded-2xl bg-[#06890a] opacity-0 group-hover:opacity-10 blur-md transition-opacity duration-300 -z-10"></div>
+              <div className="absolute inset-0 rounded-2xl bg-[var(--primary)] opacity-0 group-hover:opacity-10 blur-sm transition-opacity duration-300 -z-10 pointer-events-none"></div>
             </motion.div>
           ))}
         </motion.div>
@@ -207,9 +209,9 @@ const SkillsSection = () => {
           transition={{ delay: 1 }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/50 border border-gray-700/50 rounded-full">
-            <div className="w-2 h-2 bg-[#4dc247] rounded-full animate-pulse"></div>
-            <span className="text-sm font-medium text-gray-300">
+          <div className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--surface-highlight)] border border-[var(--border)] rounded-full">
+            <div className="w-2 h-2 bg-[var(--primary)] rounded-full animate-pulse"></div>
+            <span className="text-sm font-medium text-[var(--text-secondary)]">
               Continuously expanding my skill set
             </span>
           </div>
