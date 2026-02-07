@@ -21,6 +21,9 @@ import {
   FaPython,
   FaHtml5,
   FaCss3Alt,
+  FaLock,
+  FaLayerGroup,
+  FaChartBar,
 } from "react-icons/fa";
 
 import {
@@ -30,9 +33,7 @@ import {
   SiNextdotjs,
   SiFirebase,
   SiJavascript,
-  SiNextauth,
-  SiRadixui,
-  FaChartBar,
+  SiMongodb,
 } from "react-icons/si";
 
 import { TbBrandVite } from "react-icons/tb";
@@ -46,12 +47,10 @@ const projects = [
     link: "#",
     github: "#",
     tech: [
-      { icon: <FaReact className="text-cyan-400" />, name: "React" },
-      { icon: <SiTypescript className="text-blue-600" />, name: "TypeScript" },
-      { icon: <FaNodeJs className="text-green-500" />, name: "Node.js" },
-      { icon: <SiPostgresql className="text-blue-800" />, name: "PostgreSQL" },
-      { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
-    ],
+  { icon: <SiNextdotjs className="text-white" />, name: "Next.js" },
+  { icon: <FaReact className="text-cyan-400" />, name: "React" },
+  { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS/SCSS" },
+],
     category: "Fronted",
   },
   {
@@ -138,10 +137,12 @@ const projects = [
       { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
       { icon: <SiJavascript className="text-yellow-400" />, name: "JavaScript" },
       { icon: <SiMongodb className="text-green-600" />, name: "MongoDB" },
-      { icon: <SiNextauth className="text-purple-500" />, name: "NextAuth.js" },
-      { icon: <SiRadixui className="text-indigo-400" />, name: "Radix UI" },
+      { icon: <FaLock className="text-purple-500" />, name: "NextAuth.js" },
+      { icon: <FaLayerGroup className="text-indigo-400" />, name: "Radix UI" },
       { icon: <FaChartBar className="text-emerald-400" />, name: "Charts & Analytics" },
 
+
+      
     ],
     category: "Full-stack",
   },
