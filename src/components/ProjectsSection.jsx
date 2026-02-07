@@ -20,7 +20,7 @@ const projects = [
     title: "e-Tutor – Online Education Platform (Frontend)",
     description:
       "Developed a scalable and responsive frontend interface for an online education platform similar to Udemy. Designed reusable components, intuitive navigation, and a clean user experience using React.js, focusing on real-world application structure and future backend integration",
-    image: "https://placehold.co/600x400/1a2c38/FFF?text=TalkASTU",
+    image: "https://placehold.co/600x400/1a2c38/FFF?text=e-Tutor",
     link: "#",
     github: "#",
     tech: [
@@ -64,22 +64,22 @@ const projects = [
     ],
     category: "Frontend",
   },
-  {
-    title: "Movio",
-    description:
-      "Movie search platform fetching data from TMDb, allowing users to track trending movies and popular searches, built with React, Vite, TailwindCSS, and Appwrite.",
-    image: "https://placehold.co/600x400/1a2c38/FFF?text=Movio",
-    link: "https://movio-sand.vercel.app",
-    github: "#",
-    tech: [
-      { icon: <FaReact className="text-cyan-400" />, name: "React" },
-      { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
-      { icon: <FaNodeJs className="text-green-500" />, name: "Appwrite" },
-      { icon: <TbBrandVite className="text-purple-500" />, name: "Vite" },
-      { icon: <SiTypescript className="text-blue-600" />, name: "TypeScript" },
-    ],
-    category: "Full-Stack",
-  },
+  // {
+  //   title: "Movio",
+  //   description:
+  //     "Movie search platform fetching data from TMDb, allowing users to track trending movies and popular searches, built with React, Vite, TailwindCSS, and Appwrite.",
+  //   image: "https://placehold.co/600x400/1a2c38/FFF?text=Movio",
+  //   link: "https://movio-sand.vercel.app",
+  //   github: "#",
+  //   tech: [
+  //     { icon: <FaReact className="text-cyan-400" />, name: "React" },
+  //     { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
+  //     { icon: <FaNodeJs className="text-green-500" />, name: "Appwrite" },
+  //     { icon: <TbBrandVite className="text-purple-500" />, name: "Vite" },
+  //     { icon: <SiTypescript className="text-blue-600" />, name: "TypeScript" },
+  //   ],
+  //   category: "Full-Stack",
+  // },
   {
     title: "Mock Interview AI",
     description:
