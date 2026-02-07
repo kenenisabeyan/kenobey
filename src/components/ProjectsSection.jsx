@@ -130,6 +130,9 @@ const projects = [
     link: "https://world-rank-seven.vercel.app",
     github: "#",
     tech: [
+      { icon: <SiNextdotjs className="text-white" />, name: "Next.js" },
+      { icon: <FaReact className="text-cyan-400" />, name: "React" },
+      { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
       { icon: <SiNextdotjs className="text-white" />, name: "Next.js (App Router)" },
       { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind CSS" },
       { icon: <SiJavascript className="text-yellow-400" />, name: "JavaScript" },
