@@ -18,31 +18,31 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <FaGithub />,
-      url: "https://github.com/firogute",
+      url: "https://github.com/kenenisabeyan",
       label: "GitHub",
       color: "hover:text-purple-400",
     },
     {
       icon: <FaLinkedin />,
-      url: "https://linkedin.com/in/firoguteta12",
+      url: "https://linkedin.com/in/keno05",
       label: "LinkedIn",
       color: "hover:text-blue-400",
     },
     {
       icon: <FaXTwitter />,
-      url: "https://x.com/Firogute492",
+      url: "https://x.com/kenenisa94931",
       label: "Twitter",
       color: "hover:text-blue-300",
     },
     {
       icon: <FaEnvelope />,
-      url: "mailto:firomsaguteta1@gmail.com",
+      url: "mailto:kenenisab05@gmail.com",
       label: "Email",
       color: "hover:text-red-400",
     },
     {
       icon: <FaDiscord />,
-      url: "https://discord.com/users/firogute13",
+      url: "https://discord.com/users/keno05",
       label: "Discord",
       color: "hover:text-indigo-300",
     },
@@ -67,13 +67,13 @@ const Footer = () => {
             className="text-sm text-gray-400 flex items-center gap-1"
           >
             <span>
-              &copy; {new Date().getFullYear()} Firomsa Guteta. All rights
+              &copy; {new Date().getFullYear()} Kenenisa Beyan. All rights
               reserved.
             </span>
             <span className="hidden sm:inline-flex items-center gap-1 ml-2">
               <span>Made with</span>
               <FaHeart className="text-red-500 animate-pulse" />
-              <span>by Firomsa</span>
+              <span>by Kenenisa</span>
             </span>
           </motion.div>
 
@@ -108,7 +108,7 @@ const Footer = () => {
         >
           <span>Made with</span>
           <FaHeart className="text-red-500 animate-pulse" />
-          <span>by Firomsa</span>
+          <span>by Kenenisa</span>
         </motion.div>
       </div>
     </motion.footer>

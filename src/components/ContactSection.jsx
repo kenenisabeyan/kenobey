@@ -19,43 +19,43 @@ const ContactSection = () => {
   const socialLinks = [
     {
       icon: <FaEnvelope className="text-red-400" />,
-      url: "mailto:firomsaguteta11@gmail.com",
+      url: "mailto:kenenisab05@gmail.com",
       label: "Email",
       hoverColor: "hover:text-red-400",
     },
     {
       icon: <FaGithub className="text-gray-200" />,
-      url: "https://github.com/firogute",
+      url: "https://github.com/kenenisabeyan",
       label: "GitHub",
       hoverColor: "hover:text-purple-400",
     },
     {
       icon: <FaLinkedin className="text-blue-500" />,
-      url: "https://linkedin.com/in/firoguteta12",
+      url: "https://linkedin.com/in/keno05",
       label: "LinkedIn",
       hoverColor: "hover:text-blue-400",
     },
     {
       icon: <FaXTwitter className="text-gray-400" />,
-      url: "https://twitter.com/FiroGute492",
+      url: "https://twitter.com/kenenisa94931",
       label: "Twitter",
       hoverColor: "hover:text-blue-300",
     },
     {
       icon: <FaDiscord className="text-indigo-400" />,
-      url: "https://discord.com/users/firogute13",
+      url: "https://discord.com/users/keno05",
       label: "Discord",
       hoverColor: "hover:text-indigo-300",
     },
     {
       icon: <SiDevdotto className="text-gray-300" />,
-      url: "https://dev.to/yourusername",
+\      url: "https://dev.to/keno05",
       label: "Dev.to",
       hoverColor: "hover:text-green-400",
     },
     {
       icon: <SiLeetcode className="text-yellow-500" />,
-      url: "https://leetcode.com/firogute",
+      url: "https://leetcode.com/kenenisabeyan",
       label: "LeetCode",
       hoverColor: "hover:text-yellow-400",
     },
@@ -135,10 +135,10 @@ const ContactSection = () => {
           <p className="text-sm">
             Prefer a direct approach? <br className="sm:hidden" />
             <a
-              href="mailto:firomsaguteta11@gmail.com"
+              href="mailto:kenenisab05@gmail.com"
               className="text-[#4dc247] hover:underline"
             >
-              firomsaguteta11@gmail.com
+              kenenisab05@gmail.com
             </a>
           </p>
         </motion.div>
