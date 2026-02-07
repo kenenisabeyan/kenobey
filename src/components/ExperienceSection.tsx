@@ -7,7 +7,7 @@ const ExperienceSection = () => {
   const experiences = [
     {
       id: 1,
-      company: "Upwork",
+      company: "",
       role: "Full-Stack Developer",
       period: "Feb 2024 - Present",
       location: "Remote",

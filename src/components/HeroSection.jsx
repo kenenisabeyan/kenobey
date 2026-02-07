@@ -122,10 +122,10 @@ const HeroSection = () => {
         {/* Enhanced Social Links (neutral hover accents) */}
         <motion.ul variants={itemVariants} className="flex gap-6 mt-12">
           {[
-            { icon: <FaGithub />, url: "https://github.com/firogute", label: "GitHub", color: "hover:text-gray-300" },
+            { icon: <FaGithub />, url: "https://github.com/kenenisabeyan", label: "GitHub", color: "hover:text-gray-300" },
             { icon: <FaXTwitter />, url: "#", label: "Twitter", color: "hover:text-blue-400" },
-            { icon: <FaLinkedin />, url: "https://linkedin.com/in/firoguteta12", label: "LinkedIn", color: "hover:text-blue-500" },
-            { icon: <FaMedium />, url: "https://x.com/Firogute492", label: "Medium", color: "hover:text-gray-300" },
+            { icon: <FaLinkedin />, url: "https://linkedin.com/in/keno05", label: "LinkedIn", color: "hover:text-blue-500" },
+            { icon: <FaMedium />, url: "https://x.com/kenenisa94931", label: "Medium", color: "hover:text-gray-300" },
           ].map((social, index) => (
             <motion.li key={index} whileHover={{ y: -6, scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <a
@@ -166,7 +166,7 @@ const HeroSection = () => {
             onMouseLeave={() => setNameHovered(false)}
           >
             <span className="relative z-10 bg-clip-text text-transparent bg-gradient-to-r from-[#06890a] to-[#4dc247]">
-              Firomsa Guteta
+              Kenenisa Beyan
             </span>
             <motion.span
               className="absolute bottom-1 left-0 w-full h-1 bg-gradient-to-r from-[#06890a] to-[#4dc247]"
