@@ -17,9 +17,9 @@ import { TbBrandVite } from "react-icons/tb";
 
 const projects = [
   {
-    title: "TalkASTU",
+    title: "e-Tutor – Online Education Platform (Frontend)",
     description:
-      "A university social network with real-time messaging, event management, and academic resources sharing built with PERN stack.",
+      "Developed a scalable and responsive frontend interface for an online education platform similar to Udemy. Designed reusable components, intuitive navigation, and a clean user experience using React.js, focusing on real-world application structure and future backend integration",
     image: "https://placehold.co/600x400/1a2c38/FFF?text=TalkASTU",
     link: "#",
     github: "#",
@@ -30,12 +30,12 @@ const projects = [
       { icon: <SiPostgresql className="text-blue-800" />, name: "PostgreSQL" },
       { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
     ],
-    category: "Full-Stack",
+    category: "Fronted",
   },
   {
-    title: "LiveDocs",
+    title: "Quill ",
     description:
-      "A real-time collaborative document editor built with Next.js and Liveblocks, featuring GitHub authentication, inline comments, notifications, and responsive UI.",
+      "Designed responsive layouts with clear navigation, feature sections, and call-to-action components. Focused on clean UI, typography, and realistic product-style design.",
     image: "https://placehold.co/600x400/1a2c38/FFF?text=LiveDocs",
     link: "https://live-docs-xnzk.vercel.app",
     github: "#",
@@ -46,12 +46,12 @@ const projects = [
       { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
       { icon: <FaNodeJs className="text-green-500" />, name: "Liveblocks" },
     ],
-    category: "Full-Stack",
+    category: "Frontend",
   },
   {
-    title: "Clinic Management System",
+    title: "Student-Grade-Management-App",
     description:
-      "Role-based web application for managing student clinic appointments, patient records, and reporting, built with React, Supabase, PostgreSQL, and TypeScript.",
+      "Designed and developed the frontend of a university-style student grade management system inspired by real academic platforms. Added persistent data handling with maintainable UI logic to support realistic academic workflows.",
     image: "https://placehold.co/600x400/1a2c38/FFF?text=Clinic+Management",
     link: "https://wusc.vercel.app",
     github: "#",
@@ -62,7 +62,7 @@ const projects = [
       { icon: <SiPostgresql className="text-blue-800" />, name: "PostgreSQL" },
       { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
     ],
-    category: "Full-Stack",
+    category: "Frontend",
   },
   {
     title: "Movio",
@@ -96,9 +96,9 @@ const projects = [
     category: "Full-Stack",
   },
   {
-    title: "World Rank",
+    title: "Employee-Performance-Evaluation -Dashboard",
     description:
-      "Country ranking web app showing population, area, and region details with sorting, filtering, and neighbor navigation, built with Next.js and REST Countries API.",
+      "Designed and implemented a scalable full-stack performance evaluation system using Next.js(App Router) and MongoDB. Enabled admin,self, and peer evaluations with secure authentication,role-based dashboards, and performance data visualization to improve transparency and tracking.",
     image: "https://placehold.co/600x400/1a2c38/FFF?text=World+Rank",
     link: "https://world-rank-seven.vercel.app",
     github: "#",
@@ -107,7 +107,7 @@ const projects = [
       { icon: <FaReact className="text-cyan-400" />, name: "React" },
       { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
     ],
-    category: "Frontend",
+    category: "Full-stack",
   },
   {
     title: "Country Quiz",
