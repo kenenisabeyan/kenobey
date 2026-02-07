@@ -47,7 +47,7 @@ const ExperienceSection = () => {
         },
       ],
       upworkUrl:
-        "https://www.upwork.com/freelancers/~01d64fa15434a12eda?mp_source=share",
+        "https://www.upwork.com/freelancers/~0167d450fe17ec558c",
     },
   ];
 
@@ -101,7 +101,7 @@ const ExperienceSection = () => {
         {/* Section Header */}
         <motion.div variants={cardVariants} className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-white">Professional </span>
+            {/* <span className="text-white">Professional </span> */}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#06890a] to-[#4dc247]">
               Experience
             </span>
@@ -133,7 +133,7 @@ const ExperienceSection = () => {
                 whileTap={{ scale: 0.95 }}
                 className="hidden lg:inline-flex absolute -top-3 -right-3 items-center gap-2 bg-gradient-to-r from-[#14a800] to-[#0d8d00] text-white font-semibold px-5 py-2.5 rounded-full hover:shadow-2xl hover:shadow-[#14a800]/30 transition-all duration-300 z-20"
               >
-                <span>Hire Me on Upwork</span>
+                {/*  <span>Hire Me on Upwork</span> */}
                 <FiExternalLink className="text-sm" />
               </motion.a>
 
@@ -226,7 +226,7 @@ const ExperienceSection = () => {
                 whileTap={{ scale: 0.98 }}
                 className="lg:hidden mt-6 w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#14a800] to-[#0d8d00] text-white font-semibold px-6 py-4 rounded-xl hover:shadow-2xl hover:shadow-[#14a800]/30 transition-all duration-300"
               >
-                <span>Hire Me on Upwork</span>
+                {/* <span>Hire Me on Upwork</span> */}
                 <FiExternalLink className="text-sm" />
               </motion.a>
             </motion.div>
