@@ -107,7 +107,7 @@ const NavBar = () => {
                 {/* Keep logo crisp & uncropped */}
                 <div className="relative z-10 flex items-center justify-center w-12 h-12">
                   <img
-                    src="logo.jpg"
+                    src="logo.png"
                     alt="Logo"
                     className="w-10 h-10 object-contain transition-transform duration-500
                    group-hover:scale-110"

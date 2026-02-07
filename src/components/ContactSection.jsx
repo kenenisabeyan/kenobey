@@ -49,7 +49,7 @@ const ContactSection = () => {
     },
     {
       icon: <SiDevdotto className="text-gray-300" />,
-\      url: "https://dev.to/keno05",
+          url: "https://dev.to/keno05",
       label: "Dev.to",
       hoverColor: "hover:text-green-400",
     },
