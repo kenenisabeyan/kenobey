@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --linearPrimarySecondary: linear-gradient(#06890a, #5db8f8);
+  --linearPrimaryAccent: linear-gradient(#06890a, #0a33d6);
+  --linearSecondaryAccent: linear-gradient(#5db8f8, #0a33d6);
+  --radialPrimarySecondary: radial-gradient(#06890a, #5db8f8);
+  --radialPrimaryAccent: radial-gradient(#06890a, #0a33d6);
+  --radialSecondaryAccent: radial-gradient(#5db8f8, #0a33d6);
+}
+
+:root[data-theme="light"] {
+  --text: #011e02;
+  --background: #f1fef2;
+  --primary: #06890a;
+  --secondary: #5db8f8;
+  --accent: #0a33d6;
+}
+:root[data-theme="dark"] {
+  --text: #e1fee2;
+  --background: #010e02;
+  --primary: #76f97a;
+  --secondary: #0761a2;
+  --accent: #2952f5;
+}
+
+@theme {
+  --font-family-sans: "Inter", sans-serif;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
