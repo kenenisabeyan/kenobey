@@ -1,18 +1,37 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ProjectCard from "./ProjectSection/ProjectCard";
+// import {
+//   FaReact,
+//   FaNodeJs,
+//   FaPython
+// } from "react-icons/fa";
+// import {
+//   SiPostgresql,
+//   SiTailwindcss,
+//   SiTypescript,
+//   SiNextdotjs,
+//   SiFirebase,
+// } from "react-icons/si";
+// import { TbBrandVite } from "react-icons/tb";
+
 import {
   FaReact,
   FaNodeJs,
-  FaPython
+  FaPython,
+  FaHtml5,
+  FaCss3Alt,
 } from "react-icons/fa";
+
 import {
   SiPostgresql,
   SiTailwindcss,
   SiTypescript,
   SiNextdotjs,
   SiFirebase,
+  SiJavascript,
 } from "react-icons/si";
+
 import { TbBrandVite } from "react-icons/tb";
 
 const projects = [
@@ -40,11 +59,15 @@ const projects = [
     link: "https://live-docs-xnzk.vercel.app",
     github: "#",
     tech: [
-      { icon: <SiNextdotjs className="text-white" />, name: "Next.js" },
-      { icon: <SiTypescript className="text-blue-600" />, name: "TypeScript" },
-      { icon: <FaReact className="text-cyan-400" />, name: "React" },
-      { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
-      { icon: <FaNodeJs className="text-green-500" />, name: "Liveblocks" },
+      { icon: <SiJavascript className="text-yellow-400" />, name: "JavaScript" },
+      { icon: <FaHtml5 className="text-orange-600" />, name: "HTML" },
+      { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS" },
+
+      // { icon: <SiNextdotjs className="text-white" />, name: "Next.js" },
+      // { icon: <SiTypescript className="text-blue-600" />, name: "TypeScript" },
+      // { icon: <FaReact className="text-cyan-400" />, name: "React" },
+      // { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
+      // { icon: <FaNodeJs className="text-green-500" />, name: "Liveblocks" },
     ],
     category: "Frontend",
   },
@@ -56,11 +79,15 @@ const projects = [
     link: "https://wusc.vercel.app",
     github: "#",
     tech: [
-      { icon: <FaReact className="text-cyan-400" />, name: "React" },
-      { icon: <SiTypescript className="text-blue-600" />, name: "TypeScript" },
-      { icon: <FaNodeJs className="text-green-500" />, name: "Supabase" },
-      { icon: <SiPostgresql className="text-blue-800" />, name: "PostgreSQL" },
-      { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
+      { icon: <SiJavascript className="text-yellow-400" />, name: "JavaScript" },
+      { icon: <FaHtml5 className="text-orange-600" />, name: "HTML" },
+      { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS" },
+
+      // { icon: <FaReact className="text-cyan-400" />, name: "React" },
+      // { icon: <SiTypescript className="text-blue-600" />, name: "TypeScript" },
+      // { icon: <FaNodeJs className="text-green-500" />, name: "Supabase" },
+      // { icon: <SiPostgresql className="text-blue-800" />, name: "PostgreSQL" },
+      // { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
     ],
     category: "Frontend",
   },
