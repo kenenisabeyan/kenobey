@@ -48,9 +48,9 @@ const NavBar = () => {
   ];
 
   const socialLinks = [
-    { icon: <FaGithub />, url: "https://github.com/firogute", label: "GitHub" },
-    { icon: <FaLinkedin />, url: "https://linkedin.com/in/firoguteta12", label: "LinkedIn" },
-    { icon: <FaTwitter />, url: "https://x.com/Firogute492", label: "Twitter" },
+    { icon: <FaGithub />, url: "https://github.com/kenenisabeyan", label: "GitHub" },
+    { icon: <FaLinkedin />, url: "https://linkedin.com/in/keno05", label: "LinkedIn" },
+    { icon: <FaTwitter />, url: "https://x.com/kenenisa93941", label: "Twitter" },
   ];
 
   return (
@@ -107,7 +107,7 @@ const NavBar = () => {
                 {/* Keep logo crisp & uncropped */}
                 <div className="relative z-10 flex items-center justify-center w-12 h-12">
                   <img
-                    src="logo.svg"
+                    src="logo.jpg"
                     alt="Logo"
                     className="w-10 h-10 object-contain transition-transform duration-500
                    group-hover:scale-110"
