@@ -1,19 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ProjectCard from "./ProjectSection/ProjectCard";
-// import {
-//   FaReact,
-//   FaNodeJs,
-//   FaPython
-// } from "react-icons/fa";
-// import {
-//   SiPostgresql,
-//   SiTailwindcss,
-//   SiTypescript,
-//   SiNextdotjs,
-//   SiFirebase,
-// } from "react-icons/si";
-// import { TbBrandVite } from "react-icons/tb";
 
 import {
   FaReact,
@@ -64,12 +51,6 @@ const projects = [
       { icon: <SiJavascript className="text-yellow-400" />, name: "JavaScript" },
       { icon: <FaHtml5 className="text-orange-600" />, name: "HTML" },
       { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS" },
-
-      // { icon: <SiNextdotjs className="text-white" />, name: "Next.js" },
-      // { icon: <SiTypescript className="text-blue-600" />, name: "TypeScript" },
-      // { icon: <FaReact className="text-cyan-400" />, name: "React" },
-      // { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
-      // { icon: <FaNodeJs className="text-green-500" />, name: "Liveblocks" },
     ],
     category: "Frontend",
   },
@@ -84,31 +65,10 @@ const projects = [
       { icon: <SiJavascript className="text-yellow-400" />, name: "JavaScript" },
       { icon: <FaHtml5 className="text-orange-600" />, name: "HTML" },
       { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS" },
-
-      // { icon: <FaReact className="text-cyan-400" />, name: "React" },
-      // { icon: <SiTypescript className="text-blue-600" />, name: "TypeScript" },
-      // { icon: <FaNodeJs className="text-green-500" />, name: "Supabase" },
-      // { icon: <SiPostgresql className="text-blue-800" />, name: "PostgreSQL" },
-      // { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
     ],
     category: "Frontend",
   },
-  // {
-  //   title: "Movio",
-  //   description:
-  //     "Movie search platform fetching data from TMDb, allowing users to track trending movies and popular searches, built with React, Vite, TailwindCSS, and Appwrite.",
-  //   image: "https://placehold.co/600x400/1a2c38/FFF?text=Movio",
-  //   link: "https://movio-sand.vercel.app",
-  //   github: "#",
-  //   tech: [
-  //     { icon: <FaReact className="text-cyan-400" />, name: "React" },
-  //     { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
-  //     { icon: <FaNodeJs className="text-green-500" />, name: "Appwrite" },
-  //     { icon: <TbBrandVite className="text-purple-500" />, name: "Vite" },
-  //     { icon: <SiTypescript className="text-blue-600" />, name: "TypeScript" },
-  //   ],
-  //   category: "Full-Stack",
-  // },
+
   {
     title: "Mock Interview AI",
     description:
