@@ -36,7 +36,7 @@ const projects = [
     title: "Quill ",
     description:
       "Designed responsive layouts with clear navigation, feature sections, and call-to-action components. Focused on clean UI, typography, and realistic product-style design.",
-    image: "https://placehold.co/600x400/1a2c38/FFF?text=LiveDocs",
+    image: "https://placehold.co/600x400/1a2c38/FFF?text=Quill",
     link: "https://live-docs-xnzk.vercel.app",
     github: "#",
     tech: [
@@ -52,7 +52,7 @@ const projects = [
     title: "Student-Grade-Management-App",
     description:
       "Designed and developed the frontend of a university-style student grade management system inspired by real academic platforms. Added persistent data handling with maintainable UI logic to support realistic academic workflows.",
-    image: "https://placehold.co/600x400/1a2c38/FFF?text=Clinic+Management",
+    image: "https://placehold.co/600x400/1a2c38/FFF?text=Grade+Management+App",
     link: "https://wusc.vercel.app",
     github: "#",
     tech: [
@@ -99,7 +99,7 @@ const projects = [
     title: "Employee-Performance-Evaluation -Dashboard",
     description:
       "Designed and implemented a scalable full-stack performance evaluation system using Next.js(App Router) and MongoDB. Enabled admin,self, and peer evaluations with secure authentication,role-based dashboards, and performance data visualization to improve transparency and tracking.",
-    image: "https://placehold.co/600x400/1a2c38/FFF?text=World+Rank",
+    image: "https://placehold.co/600x400/1a2c38/FFF?text=Evaluation+Dashboard",
     link: "https://world-rank-seven.vercel.app",
     github: "#",
     tech: [
