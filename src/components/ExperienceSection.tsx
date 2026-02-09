@@ -9,8 +9,8 @@ const ExperienceSection = () => {
       id: 1,
       company: "",
       role: "Full-Stack Developer",
-      period: "Feb 2024 - Present",
-      location: "Remote",
+      // period: "Feb 2024 - Present",
+      // location: "Remote",
       description:
         "Working on full-stack web development projects, building responsive front-end interfaces and robust back-end systems using modern technologies.",
       technologies: [
@@ -25,8 +25,8 @@ const ExperienceSection = () => {
         "PostgreSQL",
         "Django",
         "FastAPI",
-        "n8n",
-        "SEO",
+        // "n8n",
+        // "SEO",
       ],
       achievements: [
         {
@@ -191,7 +191,7 @@ const ExperienceSection = () => {
               </div>
 
               {/* Achievements */}
-              <div>
+              {/* <div>
                 <h4 className="text-[var(--text-primary)] font-semibold mb-4 flex items-center gap-2">
                   <FaAward className="text-yellow-400" />
                   Key Achievements
@@ -215,7 +215,7 @@ const ExperienceSection = () => {
                     </motion.div>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               {/* Mobile CTA */}
               <motion.a
