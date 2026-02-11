@@ -9,8 +9,8 @@ const ExperienceSection = () => {
       id: 1,
       company: "",
       role: "Full-Stack Developer",
-      // period: "Feb 2024 - Present",
-      // location: "Remote",
+      period: "",
+      location: "",
       description:
         "Working on full-stack web development projects, building responsive front-end interfaces and robust back-end systems using modern technologies.",
       technologies: [
