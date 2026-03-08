@@ -122,8 +122,8 @@ Make sure you have installed:
 Clone the repository:
 
 ```bash
-git clone https://github.com/kenenisabeyan/portfolio.git
-cd portfolio
+git clone https://github.com/kenenisabeyan/kenobey.git
+cd kenobey
 ```
 
 Install dependencies:
