@@ -92,8 +92,8 @@ Ensure you have installed:
 Clone the repository:
 
 ```bash
-git clone https://github.com/kenenisabeyan/portfolio.git
-cd portfolio
+git clone https://github.com/kenenisabeyan/kenobey.git
+cd kenobey
 ```
 
 Install dependencies:
@@ -180,7 +180,7 @@ src/
 
 View the live portfolio:
 
-**[Portfolio Website](https://your-portfolio-url.com)**
+**[Portfolio Website](https://kenobey.vercel.app/)**
 
 *(Replace with your deployed URL)*
 
