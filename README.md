@@ -1,21 +1,35 @@
-# 🌐 Kenenisa Beyan – Developer Portfolio
+# 🌐 Kenenisa Beyan – Full Stack Developer Portfolio
 
-A modern, high-performance **developer portfolio website** built with **React**, **Tailwind CSS**, and **Framer Motion**.
-This project showcases my technical skills, professional experience, and selected projects while providing multiple ways for collaborators and clients to connect with me.
+A modern, responsive **developer portfolio website** built with **React, Tailwind CSS, and Framer Motion**.
+This project showcases my technical skills, development experience, and selected projects while providing a clean and interactive interface for recruiters, collaborators, and clients.
 
-The portfolio focuses on **clean design, performance, and interactive user experience**.
+The portfolio focuses on **performance, modern UI design, and scalable component architecture**.
 
 ---
 
-# ✨ Key Features
+# 👨‍💻 About Me
+
+I am a **Full Stack Developer** passionate about building modern web applications that combine strong backend architecture with intuitive user interfaces.
+
+My development approach emphasizes:
+
+* Clean and maintainable code
+* Scalable system design
+* Performance optimization
+* User-centered interfaces
+* Modern development tools and frameworks
+
+---
+
+# ✨ Features
 
 * 🌙 **Dark / Light Theme Toggle** with persistent user preference
-* 🎬 **Smooth UI Animations** powered by Framer Motion
+* 🎬 **Smooth UI Animations** using Framer Motion
 * 📱 **Fully Responsive Design** (mobile, tablet, desktop)
-* 📊 **Scroll Progress Indicator** for improved navigation
-* ⬆️ **Scroll-to-Top Button** for better UX
-* ⚡ **Animated Loading Screen** with branded logo
-* 🧩 **Reusable Component Architecture**
+* 🧭 **Scroll Progress Indicator** for better navigation
+* ⬆️ **Scroll-to-Top Button**
+* ⚡ **Animated Loading Screen** with custom branding
+* 🧩 **Reusable React Components**
 * 🔗 **Social Media Integration** (GitHub, LinkedIn, etc.)
 * 🧠 **SEO-Friendly Structure** using semantic HTML
 
@@ -23,56 +37,72 @@ The portfolio focuses on **clean design, performance, and interactive user exper
 
 # 🧱 Website Sections
 
-The portfolio includes the following sections:
+The portfolio includes the following major sections:
 
 ### 🏠 Hero Section
 
-Introduction, personal branding, and quick navigation.
+Introduces my profile, highlights my expertise, and provides quick navigation.
 
 ### 💡 Skills
 
-Highlights core technologies and development expertise.
+Displays technologies and tools I use in development.
 
 ### 🚀 Projects
 
-Interactive project cards with:
+Interactive project cards including:
 
-* Project description
+* Project descriptions
 * Live demo links
 * Source code links
 
 ### 💼 Experience
 
-Professional and development experience.
+Professional development experience and contributions.
 
 ### 🧑‍💻 Freelance Highlights
 
-Selected freelance work and contributions.
+Selected freelance work and technical achievements.
 
 ### 📬 Contact
 
-Multiple ways to connect including email and social platforms.
+Multiple communication options including email and social media.
 
 ---
 
 # 🛠️ Technology Stack
 
-### Frontend
+## Frontend
 
-* **React**
-* **Tailwind CSS**
-* **Framer Motion**
+* React
+* Tailwind CSS
+* Framer Motion
+* JavaScript (ES6+)
+* HTML5
+* CSS3
 
-### Tools
+## Backend (Developer Skillset)
 
-* **Vite** – lightning-fast development build tool
-* **React Icons** – scalable icon library
-* **npm / yarn** – package management
+* Node.js
+* Express.js
+* REST API Development
+* Authentication (JWT)
 
-### Deployment
+## Database
 
-* **Vercel**
-* **Netlify**
+* MongoDB
+* Mongoose
+
+## Tools & Dev Environment
+
+* Vite
+* Git & GitHub
+* npm / yarn
+* React Icons
+
+## Deployment
+
+* Vercel
+* Netlify
 
 ---
 
@@ -80,7 +110,7 @@ Multiple ways to connect including email and social platforms.
 
 ## Prerequisites
 
-Ensure you have installed:
+Make sure you have installed:
 
 * **Node.js (v16 or higher)**
 * **npm or yarn**
@@ -92,8 +122,8 @@ Ensure you have installed:
 Clone the repository:
 
 ```bash
-git clone https://github.com/kenenisabeyan/kenobey.git
-cd kenobey
+git clone https://github.com/kenenisabeyan/portfolio.git
+cd portfolio
 ```
 
 Install dependencies:
@@ -112,6 +142,8 @@ yarn install
 
 ## Run Development Server
 
+Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -122,7 +154,7 @@ or
 yarn dev
 ```
 
-The application will run at:
+Then open your browser and visit:
 
 ```
 http://localhost:5173
@@ -132,19 +164,19 @@ http://localhost:5173
 
 # 🏗️ Production Build
 
-To generate an optimized production build:
+To create an optimized production build:
 
 ```bash
 npm run build
 ```
 
-The compiled files will be generated inside the:
+The build output will be generated in the:
 
 ```
 dist/
 ```
 
-folder and can be deployed to **Vercel**, **Netlify**, or any static hosting provider.
+folder and can be deployed to any static hosting provider.
 
 ---
 
@@ -176,13 +208,37 @@ src/
 
 ---
 
+# 🧠 Development Philosophy
+
+My goal is to build applications that are:
+
+* **Scalable**
+* **Maintainable**
+* **Performance-optimized**
+* **User-focused**
+* **Built with modern engineering practices**
+
+---
+
+# 🔮 Future Improvements
+
+Planned enhancements include:
+
+* Backend integration for dynamic content
+* CMS integration for portfolio updates
+* Blog section for technical articles
+* Analytics and performance monitoring
+* Improved accessibility support
+
+---
+
 # 🌍 Live Demo
 
 View the live portfolio:
 
 **[Portfolio Website](https://kenobey.vercel.app/)**
 
-*(Replace with your deployed URL)*
+*
 
 ---
 
@@ -210,7 +266,7 @@ This project is open-source and available under the **MIT License**.
 
 ---
 
-⭐ If you find this project helpful, feel free to **star the repository**.
+⭐ If you like this project, consider **starring the repository**.
 
 ---
 
